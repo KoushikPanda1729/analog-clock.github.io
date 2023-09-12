@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+nav .logo img {
+    width: 2.7rem;
+    border-radius: 3rem;
+    margin: 0.6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.mainClockContainer {
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2FnTE%2FEq7%2FnTEEq7Lbc.gif&f=1&nofb=1&ipt=3dda056…&ipo=images");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 3vw auto 0 auto;
+    object-fit: cover;
+}
+
+.hours,
+.minutes,
+.seconds {
+    position: absolute;
+    border-radius: 3rem;
+    background-color: red;
+    transform-origin: bottom;
+}
+
+.hours {
+    height: 20%;
+    width: 2%;
+    left: 49.4%;
+    top: 30.5%;
+}
+
+.minutes {
+    height: 30%;
+    width: 1.5%;
+    left: 49.79%;
+    top: 20.4%;
+}
+
+.seconds {
+    height: 33%;
+    width: 1%;
+    left: 49.88%;
+    top: 17%;
+}
+
+@media (max-width:550px) {
+    .mainClockContainer {
+        margin: 30vh auto 0 auto;
+        height: 60vw;
+        width: 60vw;
+    }
+}
